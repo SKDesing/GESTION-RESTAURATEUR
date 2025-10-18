@@ -59,6 +59,10 @@ echo "✅ Restaurant créé: $TARGET_DIR"
 echo "📦 Installation des dépendances..."
 npm install || { echo '❌ npm install a échoué'; exit 3; }
 
+
+echo "🗑️ Reset automatique de la base..."
+npx prisma migrate reset --force --skip-seed || { echo '❌ Reset Prisma échoué'; exit 4; }
+
 echo "🗄️ Migration Prisma..."
 npx prisma migrate dev --name init || { echo '❌ Migration Prisma échouée'; exit 4; }
 
