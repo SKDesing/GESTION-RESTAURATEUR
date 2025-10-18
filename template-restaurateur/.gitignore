@@ -1,0 +1,2 @@
+# Ignore Prisma environment file containing secrets
+prisma/.env

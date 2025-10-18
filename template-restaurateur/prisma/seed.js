@@ -11,7 +11,7 @@ async function main() {
       password: await bcrypt.hash('admin123', 10),
       nom: 'Admin',
       prenom: 'Super',
-      role: 'ADMIN',
+      role: 'RESTAURATEUR',
       actif: true
     },
     {
@@ -19,7 +19,7 @@ async function main() {
       password: await bcrypt.hash('user123', 10),
       nom: 'User',
       prenom: 'Employé',
-      role: 'EMPLOYE',
+      role: 'SERVEUR',
       actif: true
     }
   ];
