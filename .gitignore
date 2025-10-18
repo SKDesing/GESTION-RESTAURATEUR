@@ -1,0 +1,27 @@
+
+# Fichiers secrets et sensibles
+GESTION RESTAURANT/.env
+.env
+*.env.local
+*.env.example
+*.env.*
+
+# Dépendances et build
+node_modules/
+.next/
+dist/
+build/
+coverage/
+
+# Logs et caches
+*.log
+.DS_Store
+*.sqlite
+*.db
+*.tar.gz
+*.dump
+
+# Autres fichiers à ignorer
+/.vscode/
+/.idea/
+*.swp

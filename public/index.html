@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestion Restaurateur</title>
+  <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Gestion Restaurateur</a>
+  </nav>
+  <div class="container mt-5">
+    <h1 class="text-center">Bienvenue sur la gestion des restaurateurs</h1>
+    <button id="alertBtn" class="btn btn-primary mt-3">Test SweetAlert2</button>
+  </div>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+  <script>
+    document.getElementById('alertBtn').addEventListener('click', function() {
+      Swal.fire({
+        title: 'Succès!',
+        text: 'SweetAlert2 fonctionne parfaitement.',
+        icon: 'success',
+        confirmButtonText: 'OK'
+      });
+    });
+  </script>
+</body>
+</html>
