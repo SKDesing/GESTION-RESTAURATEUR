@@ -1,3 +1,8 @@
+# Ne pas versionner les fichiers d'environnement contenant des mots de passe
+template-restaurateur/prisma/.env
+restaurants/*/prisma/.env
+GESTION DE RESTAURANT /.env
+GESTION DE RESTAURANT /table-de-yemma/.env
 
 # Fichiers secrets et sensibles
 GESTION RESTAURANT/.env
